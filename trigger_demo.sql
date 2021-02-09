@@ -85,4 +85,10 @@ DELETE FROM follows WHERE follower_id=2 AND followee_id=1;
 SELECT * FROM follows LIMIT 5;
 SELECT * FROM unfollows;
 
+DELETE FROM follows WHERE follower_id=3;
+SELECT * FROM unfollows;
 
+SHOW TRIGGERS;
+
+DROP TRIGGER prevent_self_follow;
+SHOW TRIGGERS;
